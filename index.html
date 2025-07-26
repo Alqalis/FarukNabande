@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Faruku Umar Nambande">
+    <meta name="description" content="Employee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kebbi Kalgo Bunza</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/styleform1.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="icon" href="logo/ico/icon.ico">
+</head>
+
+<body>
+    <article>
+        <!-- <div id="size"></div> -->
+        <header>
+            <div class="logo_icon">
+                <img src="images/logo.png" alt="logo site">
+            </div>
+            <span id="OpenMenu"><i class="ri-menu-2-fill"></i></span>
+            <div class="menu__list">
+                <span id="CloseMenu"><i class="ri-close-circle-line"></i></span>
+                <ul id="NavList">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#register" class="register"><i class="ri-progress-1-fill">apply now</i></a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="TextContainer">
+                <div class="TextBox">
+                    <h2>
+                        Birnin Kebbi–Kalgo–Bunza <span class="wrap">Student Development Forum</span>
+                    </h2>
+                    <section class="TextChild">
+                        <h3>Introduction</h3>
+                        <p>
+                            The Birnin Kebbi–Kalgo–Bunza Student Development Forum is a collaborative initiative aimed at empowering students and graduates from the Birnin Kebbi, Kalgo, and Bunza local government areas. Our goal is to create a platform that fosters academic excellence, leadership, and community development among youth in these communities.
+                        </p>
+                    </section>
+
+                    <section class="Multiple">
+                        <div class="multipleChild">
+                            <h3>Our Mission</h3>
+                            <p>
+                                To provide students and graduates with opportunities for personal growth, skills development, mentorship, and networking, enabling them to contribute positively to their communities and beyond.
+                            </p>
+                        </div>
+                        <div class="multipleChild">
+                            <h3>Our Vision</h3>
+                            <p>
+                            To become the leading student and graduate forum in the region, recognized for empowering youth, driving educational advancement, and promoting sustainable community development.
+                            </p>
+                        </div>
+                        <div class="multipleChild">
+                            <h3>Our Ambition</h3>
+                            <p>
+                                <ol>
+                                    <li>
+                                        Facilitate career readiness and professional development programs
+                                    </li>
+                                    <li>
+                                        Support youth entrepreneurship and innovation
+                                    </li>
+                                    <li>
+                                        Encourage community service and active citizenship
+                                    </li>
+                                    <li>
+                                        Build a strong network of students, graduates
+                                    </li>
+                                    <li>
+                                        Professionals committed to the progress of Birnin Kebbi, Kalgo, and Bunza
+                                    </li>
+                                </ol>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <section class="Emir_Section">
+            <h3>grand Patrons</h3>
+            <div class="profile">
+                <img src="images/image2.png" alt="Emir Muhammad Iliyasu Bashar (Sarkin Gwandu) (CFR, Mni)" width="200" height="200" class="none">
+                <span>Emir Muhammad Iliyasu Bashar (Sarkin Gwandu) (CFR, Mni)</span>
+            </div>
+
+            <div class="profile">
+                <img src="images/image0.png" alt="alhaji haruna jadda bashar (sarkin Gobir)" width="200" height="200">
+                <span>alhaji haruna jadda bashar (sarkin Gobir)</span>
+            </div>
+
+            <div class="profile">
+                <img src="images/image1.png" alt="dr. aminu haliru Bunza jikan gagga (Public Health Adovate and humanatarian)" width="200" height="200" class="centerimage">
+                <span>dr. aminu haliru Bunza jikan gagga <p title="Public Health Adovate and humanatarian" >(PHAH)</p></span>
+            </div>
+        </section>
+
+        <section class="FormElement"  id="register">
+            <div class="FormBox">
+                <div class="step-row">
+                    <div id="progress"></div>
+                    <div class="step-col one">step 1</div>
+                    <div class="step-col two">step 2</div>
+                    <div class="step-col three">step 3</div>
+                    <div class="step-col four">step 4</div>
+                </div>
+                <div id="Form1" class="Form">
+                    <p>personal Information <i class="ri-information-line"></i></p>
+                    <form action="php/connect.php" method="POST">
+                    <label for="firstname">first name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="enter your first name"  autocomplete="on" required>
+                    <label for="surname">surname</label>
+                    <input type="text" name="surname" id="su name" placeholder="enter your surname"  autocomplete="on" required>
+                    <label for="othername">other name</label>
+                    <input type="text" name="othername" id="othername" placeholder="enter your othername"  autocomplete="on" required>
+        
+                    <label for="gender">gender</label>
+                    <select name="gender"  autocomplete="on" id="gender" required>
+                        <option disabled selected>Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+        
+                    <label for="dob">date <span style="text-transform: lowercase;">of</span> birth</label>
+                    <input type="date" name="dob" id="dob" placeholder="enter your dob"  autocomplete="on" required>
+            
+                    <div id="btn_con">
+                        <button type="button" id="Next1">Next <code>></code></button>
+                    </div>
+                </div>
+                <div id="Form2" class="Form">
+                    <label for="phone">phone number</label>
+                    <input type="text" name="phone" id="phone" placeholder="enter your phone number"  autocomplete="on" required>
+    
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email" placeholder="enter your email address optional"  autocomplete="on" required>
+
+                    <label for="resident_address">address</label>
+                    <input type="text" name="resident_address" id="resident_address" placeholder="enter your Resident address"  autocomplete="on" required>
+                    
+                    <label for="skill">skill</label>
+                    <input type="text" name="skill" id="skill" placeholder="enter your skill"  autocomplete="on" required>
+                    
+                    <label for="lg">local government</label>
+                    <select name="lg"  id="lg" autocomplete="on" required>
+                        <option disabled selected>Choose government</option>
+                        <option value="Birnin_kebbi">Birnin kebbi</option>
+                        <option value="kalgo">kalgo</option>
+                        <option value="bunza">bunza</option>
+                    </select>
+                    <div id="btn_con">
+                        <button type="button" id="Next2">Next <code>></code></button>
+                        <button type="button" id="Back1"><code><</code> Back</button>
+                    </div>
+                </div>
+                <div id="Form3" class="Form">
+                    <p>Educational Information</p>
+                    <label for="educational_status">Educational status</label>
+                    <input type="text" name="educational_status" id="list" list="list" placeholder="enter your status"  autocomplete="on" required>
+                    <datalist id="list">
+                        <option value="Current Student">current Student</option>
+                        <option value="Graduate Completed Studies">Graduate (Completed Studies)</option>
+                        <option value="NYSC Member">NYSC Member</option>
+                    </datalist> 
+        
+                    <label for="schoolname">school name</label>
+                    <input type="text" name="school_name" id="schoolname" placeholder="enter your school name"  autocomplete="on" required>
+            
+                    <label for="CourseofStudy">Course <span style="text-transform: lowercase;">of</span> Study</label>
+                    <input type="text" name="course_of_study" id="CourseofStudy" placeholder="enter your Course of Study"  autocomplete="on" required>
+                
+                    <label for="Current_class/Graduate_year">Current class / Graduate year</label>
+                    <select  autocomplete="on" name="level" id="Current_class/Graduate_year"  autocomplete="on" required>
+                        <option selected disabled></option>
+                        <option value="100 level">100 level</option>
+                        <option value="200 level">200 level</option>
+                        <option value="300 level">300 level</option>
+                        <option value="400 level">400 level</option>
+                        <option value="500 level">500 level</option>
+                        <option value="600 level">600 level</option>
+                        <option value="700 level">700 level</option>
+                        <option value="Graduate">Graduate</option>
+                    </select>
+    
+    
+                    <label for="indigene">indigene</label>
+                    <input type="file" name="indigenePhoto"  id="indigene" autocomplete="on" required>
+                    <div id="btn_con">
+                        <button type="button" id="Next3">Next <code>></code></button>
+                        <button type="button" id="Back2"><code><</code> Back</button>
+                    </div>
+                </div>
+                <div id="Form4" class="Form">
+                    <p>Additional Information <i class="ri-add-box-line"></i></p>
+                    <label for="volunteering">Interested in volunteering for the forum?</label>
+                    <select name="volunteering" id="volunteering" autocomplete="on" required>
+                        <option selected disabled></option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    
+                    <label for="Expectations">Expectations from the Forum</label>
+                   <textarea placeholder="Expectations from the Forum" name="Expectations_from_the_Forum" id="Expectations" autocomplete="on" required></textarea>
+                
+                    <div id="btn_con">
+                        <button type="button" id="Back3"><code><</code> Back</button>
+                        <button type="submit" id="submit">submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="author">
+                <figure>
+                    <img src="images/faruku nabande.png" alt="faruku nabande" width="351" height="406">
+                    <figcaption>
+                        <h4>Umar Faruk Nabande</h4>
+                        <p>
+                            Founder – Birnin Kebbi Kalgo Bunza Student Development Forum Former General Secretary – A.B. Cost JAMB, Computer Training, Skills Acquisition and Continuing Education Center Founder <code>–</code> Kebbi Youths Education and Empowerment Initiatives
+                        </p>
+                        <h4>Umar Faruk Nabande</h4>
+                        <p>
+                            is a committed advocate for education, youth empowerment, and community development in Kebbi State, Nigeria. He is the founder and president of the Birnin Kebbi Kalgo Bunza Student Development Forum, which supports student leadership, academic achievement, and personal growth.
+                        <br>
+                            He previously served as General Secretary of A.B. Cost JAMB, Computer Training, Skills Acquisition and Continuing Education Center, where he helped coordinate programs that promoted digital literacy, exam preparation, and skill-building for students and young professionals.
+                        </p>
+                       <h4> Umar</h4>
+                       <p>
+                            is also the founder of the Kebbi Youths Education and Empowerment Initiatives, a platform focused on expanding educational access, leadership training, and economic opportunities for youth across the region.
+                        </p>
+                        </figcaption>
+                </figure>
+            </div>
+        </section> 
+
+        <div class="Prof_Info">
+            <h3>Birnin Kebbi–Kalgo–Bunza professors co - grand Patrons</h3>
+            <figure>
+                <img src="images/profbbshehu.png" width="254" height="277">
+                <figcaption> B. B. Shehu (frcs, fwacs, facs, fmcs)</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/Professor Engr. Danshehu Bagudu Gwadangaji.png"width="281" height="343">
+    
+                <figcaption> Engr. Dan Shehu Bagudu Gwadangaji</figcaption>
+            </figure>
+            <!-- Professor Engr. Dan shehu Bagudu Gwadangaji
+    Vice‑Chancellor, Kebbi State University of Science & Technology (KSUSTA), Aliero
+    Department / Field:
+    Mechanical Engineering (specializing in Mechanical Engineering & Energy Studies) -->   
+    
+            <figure>
+                <img src="images/Professor Faruku Aliyu Kalgo.png" alt="" width="105" height="126">
+                <figcaption> Faruku Aliyu</figcaption>
+                <!-- Name: Professor Faruku Aliyu Kalgo
+                Position: Professor of Educational Psychology at Usmanu Danfodiyo University, Sokoto (UDUS)
+                Specialization: Edu -->
+            </figure>
+          
+            <figure>
+                <img src="images/Professor Aliyu Muhammad Bunza.png" width="158" height="199">
+                <figcaption> Aliyu Muhammad</figcaption>
+                <!-- Professor Aliyu Muhammad Bunza
+                    Field of Study: Hausa Culture, Literature, and Language
+            Faculty: Faculty of Humanities and Education -->
+            </figure>
+        </div>
+    </div>
+    <footer>
+       
+        <div class="social__links">
+            <!-- <p><?php require "visit.php";?></p> -->
+            <div></div>
+            <div>
+                <span>Join Our handle</span>
+                <!-- Our whatsapp handle ! -->
+                <a href="https://chat.whatsapp.com/LR6pk2gTXV8Gd2XgNcbODD?mode=ac_t"><i class="ri-whatsapp-fill"></i></a>
+                <a href="https://chat.whatsapp.com/KS3xQzdt15r426ts7V60VL?mode=ac_t"><i class="ri-whatsapp-line"></i></a>
+
+                <!-- Our tiktok handle ! -->
+                <a href="https://www.tiktok.com/@birnin.kebbi.kalg?_t=ZM-8yCLZtqWJba&_r=1"><i class="ri-tiktok-line"></i></a>
+
+                <!-- Our facebook handle ! -->
+                <a href="https://www.facebook.com/birnin.kebbi.kalgo.bunza.student.forum"><i class="ri-facebook-line"></i></a>
+                
+                <!-- Our twitter handle ! -->
+                <a href="https://x.com/Bkbstudentforum?t=C9r-hcp8kmh3QNaehdUGQA&s=09"><i class="ri-twitter-x-line"></i></a>
+            </div>
+        </div>
+        <div><?php include "visit.php"; ?></div>
+        
+        <p>&copy; Faruku Nabande</p>
+        
+    </footer>
+    </article>
+</body>
+<style>
+    
+</style>
+<script src="script/menu.js"></script>
+<script src="script/multipleforms.js"></script>
+<script>
+    window.onload = screen;
+window.onresize = screen;
+
+function screen()
+{
+    wedfght = window.innerWidth;
+
+    document.getElementById("size").innerHTML="screen size " + wedfght + "PX";
+}
+</script>
+</html>
